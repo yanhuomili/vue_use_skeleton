@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>yunke</title>
+    <style type="text/css">
+    	html,body{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	
+    	/*第一种方法*/
+    	/*.skeleton {
+			    padding: 10px;
+			}
+			 
+			.skeleton .skeleton-head,
+			.skeleton .skeleton-title,
+			.skeleton .skeleton-content {
+			    background: rgb(194, 207, 214);
+			}
+			 
+			.skeleton-head {
+			    width: 100px;
+			    height: 100px;
+			    float: left;
+			}
+			 
+			.skeleton-body {
+			    margin-left: 110px;
+			}
+			 
+			.skeleton-title {
+			    width: 500px;
+			    height: 60px;
+			}
+			 
+			.skeleton-content {
+			    width: 260px;
+			    height: 30px;
+			    margin-top: 10px;
+			} */
+			
+			/*第二种情况*/
+			/*.skeleton .skeleton-head,
+			.skeleton .skeleton-title,
+			.skeleton .skeleton-content {
+			    background: rgb(194, 207, 214);
+			    background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 25%, transparent 25%);
+			    background-size: 20rem 20rem;
+			    animation: skeleton-stripes 1s linear infinite;
+			}
+			 
+			@keyframes skeleton-stripes {
+			    from {
+			        background-position: 0 0 ;
+			    }
+			    to {
+			        background-position: 20rem 0;
+			    }
+			}*/
+			
+			
+			/*第三种情况*/
+			.skeleton {
+			  padding: 10px;
+			}
+			 
+			.skeleton .skeleton-head,
+			.skeleton .skeleton-title,
+			.skeleton .skeleton-content {
+			  background: rgb(194, 207, 214);
+			}
+			 
+			.skeleton-head {
+			  width: 100px;
+			  height: 100px;
+			  float: left;
+			}
+			 
+			.skeleton-body {
+			  margin-left: 110px;
+			}
+			 
+			.skeleton-title {
+			  width: 500px;
+			  height: 60px;
+			  transform-origin: left;
+			  animation: skeleton-stretch .5s linear infinite alternate;
+			}
+			 
+			.skeleton-content {
+			  width: 260px;
+			  height: 30px;
+			  margin-top: 10px;
+			  transform-origin: left;
+			  animation: skeleton-stretch .5s -.3s linear infinite alternate;
+			}
+			 
+			@keyframes skeleton-stretch {
+			  from {
+			    transform: scalex(1);
+			  }
+			  to {
+			    transform: scalex(.3);
+			  }
+			}
+    </style>
+  </head>
+  <body>
+    <div id="app">
+			<div class="skeleton">
+			    <div class="skeleton-head"></div>
+			    <div class="skeleton-body">
+			        <div class="skeleton-title"></div>
+			        <div class="skeleton-content"></div>
+			    </div>
+			</div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
