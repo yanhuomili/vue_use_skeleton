@@ -247,6 +247,7 @@
   	  </div>
   	  
   	  <!--背景图片测试-->
+  	  <h3 style="text-align: center;">背景图片测试</h3>
   	  <ul class="bg-test">
   	  	<li></li>
   	  	<li></li>

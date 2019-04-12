@@ -248,3 +248,19 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
       return ['vue-style-loader'].concat(loaders)
     }
 ```
+
+> vue项目跨域问题
+
+在config>index.js文件里面配置如下代码
+
+``` javascript
+	proxyTable: {
+    	'/api': {
+            target: 'http://192.168.20.55:9999',//后端接口地址
+            changeOrigin: true,//是否允许跨越
+            pathRewrite: {
+                '^/api': 'http://192.168.20.55:9999',//重写,
+            }
+        }
+    },
+```
